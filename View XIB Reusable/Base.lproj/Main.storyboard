@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xZK-Ga-lK6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="View_XIB_Reusable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NOZ-bb-Nkh" customClass="NoRecordView" customModule="View_XIB_Reusable" customModuleProvider="target">
+                                <rect key="frame" x="57" y="333" width="300" height="230"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="1bS-4c-dyo"/>
+                                    <constraint firstAttribute="height" constant="230" id="ju4-jF-kIw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NOZ-bb-Nkh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0HP-5W-f5e"/>
+                            <constraint firstItem="NOZ-bb-Nkh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c7J-lF-FQe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="noRecView" destination="NOZ-bb-Nkh" id="br5-gJ-reJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="BQH-s6-CXI">
+            <objects>
+                <viewController id="0ol-Qg-gST" customClass="ViewController2" customModule="View_XIB_Reusable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pm4-Hg-5Uh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fQu-bY-ZnJ" customClass="CustomView" customModule="View_XIB_Reusable" customModuleProvider="target">
+                                <rect key="frame" x="20" y="84" width="374" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cmN-JL-KJP" customClass="CustomView" customModule="View_XIB_Reusable" customModuleProvider="target">
+                                <rect key="frame" x="20" y="185" width="374" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9fd-Mu-TSL" customClass="CustomView" customModule="View_XIB_Reusable" customModuleProvider="target">
+                                <rect key="frame" x="20" y="286" width="374" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ILD-ZE-S6c" customClass="NoInternetConnection" customModule="View_XIB_Reusable" customModuleProvider="target">
+                                <rect key="frame" x="54" y="387" width="306" height="249"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ajC-ga-U0z"/>
+                    </view>
+                    <connections>
+                        <outlet property="custView1" destination="fQu-bY-ZnJ" id="j4k-0D-B91"/>
+                        <outlet property="custView2" destination="cmN-JL-KJP" id="gnn-Hm-rE3"/>
+                        <outlet property="custView3" destination="9fd-Mu-TSL" id="Op7-6F-JrA"/>
+                        <outlet property="noInternetView" destination="ILD-ZE-S6c" id="Bcy-tB-ab8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4q-bb-bEH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="898.55072463768124" y="97.767857142857139"/>
+        </scene>
+        <!--Custom Alert View Controller-->
+        <scene sceneID="EX0-At-u0w">
+            <objects>
+                <viewController id="xZK-Ga-lK6" customClass="CustomAlertViewController" customModule="View_XIB_Reusable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qgU-aS-tdn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Alert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSU-eP-zNc">
+                                <rect key="frame" x="20" y="54" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="z3U-E7-6Tg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EqC-WS-lhW">
+                                <rect key="frame" x="20" y="401" width="374" height="54"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="X25-i2-bGK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <state key="normal" title="Success">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSuccessTapped:" destination="xZK-Ga-lK6" eventType="touchUpInside" id="kMG-cN-VbX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyr-Ss-Pib">
+                                <rect key="frame" x="20" y="475" width="374" height="54"/>
+                                <color key="backgroundColor" red="0.96031790969999997" green="0.1154989973" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="LL8-ZF-Zir"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <state key="normal" title="Failure">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFailureTapped:" destination="xZK-Ga-lK6" eventType="touchUpInside" id="pyt-h0-zsU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iyr-Ss-Pib" firstAttribute="top" secondItem="EqC-WS-lhW" secondAttribute="bottom" constant="20" id="3KI-5V-Qfe"/>
+                            <constraint firstItem="vnf-S0-oMw" firstAttribute="trailing" secondItem="EqC-WS-lhW" secondAttribute="trailing" constant="20" id="Aul-mw-Cww"/>
+                            <constraint firstItem="vnf-S0-oMw" firstAttribute="trailing" secondItem="ZSU-eP-zNc" secondAttribute="trailing" constant="20" id="KJ7-bI-Gm0"/>
+                            <constraint firstItem="vnf-S0-oMw" firstAttribute="trailing" secondItem="iyr-Ss-Pib" secondAttribute="trailing" constant="20" id="Rel-g4-e4I"/>
+                            <constraint firstItem="ZSU-eP-zNc" firstAttribute="top" secondItem="vnf-S0-oMw" secondAttribute="top" constant="10" id="aHV-Ka-DXL"/>
+                            <constraint firstItem="EqC-WS-lhW" firstAttribute="centerY" secondItem="qgU-aS-tdn" secondAttribute="centerY" constant="-20" id="gZQ-K6-NFP"/>
+                            <constraint firstItem="EqC-WS-lhW" firstAttribute="leading" secondItem="vnf-S0-oMw" secondAttribute="leading" constant="20" id="hYT-Vp-Hrw"/>
+                            <constraint firstItem="ZSU-eP-zNc" firstAttribute="leading" secondItem="vnf-S0-oMw" secondAttribute="leading" constant="20" id="pGg-lR-ggF"/>
+                            <constraint firstItem="iyr-Ss-Pib" firstAttribute="leading" secondItem="vnf-S0-oMw" secondAttribute="leading" constant="20" id="xIG-yd-oTY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vnf-S0-oMw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B92-kA-qj1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700.0000000000002" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+</document>
